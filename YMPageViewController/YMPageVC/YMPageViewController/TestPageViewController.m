@@ -1,22 +1,22 @@
 //
-//  testPageVC.m
+//  TestPageViewController.m
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
 
-#import "testPageVC.h"
-#import "tableOne.h"
-#import "tableTwo.h"
-#import "tableThree.h"
-#import "viewController.h"
+#import "TestPageViewController.h"
+#import "TestTableOne.h"
+#import "TestTableTwo.h"
+#import "TestTableThree.h"
+#import "TestOnlyViewController.h"
 
-@interface testPageVC ()<UITableViewDelegate>
+@interface TestPageViewController ()<UITableViewDelegate>
 
 @end
 
-@implementation testPageVC
+@implementation TestPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,19 +41,19 @@
     self.YM_HeaderView = tempHeaderView;
     
     //设置子控制器
-    tableOne *one = [[tableOne alloc] init];
+    TestTableOne *one = [[TestTableOne alloc] init];
     one.title = @"张三";
     [self addChildViewController:one];
     
-    tableTwo *two = [[tableTwo alloc] init];
+    TestTableTwo *two = [[TestTableTwo alloc] init];
     two.title = @"李四";
     [self addChildViewController:two];
     
-    tableThree *three = [[tableThree alloc] init];
+    TestTableThree *three = [[TestTableThree alloc] init];
     three.title = @"王五";
     [self addChildViewController:three];
     
-    viewController *four = [[viewController alloc] init];
+    TestOnlyViewController *four = [[TestOnlyViewController alloc] init];
     four.title = @"view";
     [self addChildViewController:four];
 }

@@ -6,13 +6,13 @@
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
 
-#import "viewController.h"
+#import "TestOnlyViewController.h"
 
-@interface viewController () <UIScrollViewDelegate>
+@interface TestOnlyViewController () <UIScrollViewDelegate>
 
 @end
 
-@implementation viewController
+@implementation TestOnlyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

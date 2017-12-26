@@ -1,18 +1,18 @@
 //
-//  tableOne.m
+//  TestTableOne.m
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
 
-#import "tableOne.h"
+#import "TestTableOne.h"
 
-@interface tableOne ()
+@interface TestTableOne ()
 
 @end
 
-@implementation tableOne
+@implementation TestTableOne
 
 - (void)viewDidLoad {
     [super viewDidLoad];

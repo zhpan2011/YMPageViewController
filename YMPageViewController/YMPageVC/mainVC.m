@@ -12,7 +12,7 @@
 
 #import "mainVC.h"
 #import "YMPageViewController.h"
-#import "testPageVC.h"
+#import "TestPageViewController.h"
 @interface mainVC ()
 
 @end
@@ -33,7 +33,7 @@
 
 - (void)jumpToPageVC
 {
-    testPageVC *pageVC = [[testPageVC alloc] init];
+    TestPageViewController *pageVC = [[TestPageViewController alloc] init];
     [self.navigationController pushViewController:pageVC animated:YES];
 }
 

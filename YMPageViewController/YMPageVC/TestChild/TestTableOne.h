@@ -1,5 +1,5 @@
 //
-//  tableOne.h
+//  TestTableOne.h
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tableOne : UITableViewController
+@interface TestTableOne : UITableViewController
 
 @end

@@ -1,18 +1,18 @@
 //
-//  tableThree.m
+//  TestTableThree.m
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
 
-#import "tableThree.h"
+#import "TestTableThree.h"
 
-@interface tableThree ()
+@interface TestTableThree ()
 
 @end
 
-@implementation tableThree
+@implementation TestTableThree
 
 - (void)viewDidLoad {
     [super viewDidLoad];

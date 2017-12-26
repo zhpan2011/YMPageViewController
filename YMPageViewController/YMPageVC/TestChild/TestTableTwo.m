@@ -1,18 +1,18 @@
 //
-//  tableTwo.m
+//  TestTableTwo.m
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
 
-#import "tableTwo.h"
+#import "TestTableTwo.h"
 
-@interface tableTwo ()
+@interface TestTableTwo ()
 
 @end
 
-@implementation tableTwo
+@implementation TestTableTwo
 
 - (void)viewDidLoad {
     [super viewDidLoad];

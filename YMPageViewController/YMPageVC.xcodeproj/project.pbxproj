@@ -12,11 +12,11 @@
 		364563D01F3C3B2600C00949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364563CF1F3C3B2600C00949 /* Assets.xcassets */; };
 		364563DC1F3C3B4600C00949 /* mainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 364563DB1F3C3B4600C00949 /* mainVC.m */; };
 		364563E01F3C3E7500C00949 /* YMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364563DF1F3C3E7500C00949 /* YMPageViewController.m */; };
-		364E4F7F1F3DB32000C8F7C0 /* testPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F7E1F3DB32000C8F7C0 /* testPageVC.m */; };
-		364E4F901F4285A200C8F7C0 /* tableOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8B1F4285A200C8F7C0 /* tableOne.m */; };
-		364E4F911F4285A200C8F7C0 /* tableThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8D1F4285A200C8F7C0 /* tableThree.m */; };
-		364E4F921F4285A200C8F7C0 /* tableTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8F1F4285A200C8F7C0 /* tableTwo.m */; };
-		364E4F9B1F4288BC00C8F7C0 /* viewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F9A1F4288BC00C8F7C0 /* viewController.m */; };
+		364E4F7F1F3DB32000C8F7C0 /* TestPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F7E1F3DB32000C8F7C0 /* TestPageViewController.m */; };
+		364E4F901F4285A200C8F7C0 /* TestTableOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8B1F4285A200C8F7C0 /* TestTableOne.m */; };
+		364E4F911F4285A200C8F7C0 /* TestTableThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8D1F4285A200C8F7C0 /* TestTableThree.m */; };
+		364E4F921F4285A200C8F7C0 /* TestTableTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8F1F4285A200C8F7C0 /* TestTableTwo.m */; };
+		364E4F9B1F4288BC00C8F7C0 /* TestOnlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F9A1F4288BC00C8F7C0 /* TestOnlyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,16 +30,16 @@
 		364563DB1F3C3B4600C00949 /* mainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainVC.m; sourceTree = "<group>"; };
 		364563DE1F3C3E7500C00949 /* YMPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPageViewController.h; sourceTree = "<group>"; };
 		364563DF1F3C3E7500C00949 /* YMPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPageViewController.m; sourceTree = "<group>"; };
-		364E4F7D1F3DB32000C8F7C0 /* testPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testPageVC.h; path = YMPageViewController/testPageVC.h; sourceTree = "<group>"; };
-		364E4F7E1F3DB32000C8F7C0 /* testPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testPageVC.m; path = YMPageViewController/testPageVC.m; sourceTree = "<group>"; };
-		364E4F8A1F4285A200C8F7C0 /* tableOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableOne.h; sourceTree = "<group>"; };
-		364E4F8B1F4285A200C8F7C0 /* tableOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableOne.m; sourceTree = "<group>"; };
-		364E4F8C1F4285A200C8F7C0 /* tableThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableThree.h; sourceTree = "<group>"; };
-		364E4F8D1F4285A200C8F7C0 /* tableThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableThree.m; sourceTree = "<group>"; };
-		364E4F8E1F4285A200C8F7C0 /* tableTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableTwo.h; sourceTree = "<group>"; };
-		364E4F8F1F4285A200C8F7C0 /* tableTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableTwo.m; sourceTree = "<group>"; };
-		364E4F991F4288BC00C8F7C0 /* viewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewController.h; sourceTree = "<group>"; };
-		364E4F9A1F4288BC00C8F7C0 /* viewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewController.m; sourceTree = "<group>"; };
+		364E4F7D1F3DB32000C8F7C0 /* TestPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestPageViewController.h; path = YMPageViewController/TestPageViewController.h; sourceTree = "<group>"; };
+		364E4F7E1F3DB32000C8F7C0 /* TestPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestPageViewController.m; path = YMPageViewController/TestPageViewController.m; sourceTree = "<group>"; };
+		364E4F8A1F4285A200C8F7C0 /* TestTableOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableOne.h; sourceTree = "<group>"; };
+		364E4F8B1F4285A200C8F7C0 /* TestTableOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableOne.m; sourceTree = "<group>"; };
+		364E4F8C1F4285A200C8F7C0 /* TestTableThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableThree.h; sourceTree = "<group>"; };
+		364E4F8D1F4285A200C8F7C0 /* TestTableThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableThree.m; sourceTree = "<group>"; };
+		364E4F8E1F4285A200C8F7C0 /* TestTableTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableTwo.h; sourceTree = "<group>"; };
+		364E4F8F1F4285A200C8F7C0 /* TestTableTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableTwo.m; sourceTree = "<group>"; };
+		364E4F991F4288BC00C8F7C0 /* TestOnlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOnlyViewController.h; sourceTree = "<group>"; };
+		364E4F9A1F4288BC00C8F7C0 /* TestOnlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOnlyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +106,14 @@
 		364E4F891F4285A200C8F7C0 /* TestChild */ = {
 			isa = PBXGroup;
 			children = (
-				364E4F8A1F4285A200C8F7C0 /* tableOne.h */,
-				364E4F8B1F4285A200C8F7C0 /* tableOne.m */,
-				364E4F8C1F4285A200C8F7C0 /* tableThree.h */,
-				364E4F8D1F4285A200C8F7C0 /* tableThree.m */,
-				364E4F8E1F4285A200C8F7C0 /* tableTwo.h */,
-				364E4F8F1F4285A200C8F7C0 /* tableTwo.m */,
-				364E4F991F4288BC00C8F7C0 /* viewController.h */,
-				364E4F9A1F4288BC00C8F7C0 /* viewController.m */,
+				364E4F8A1F4285A200C8F7C0 /* TestTableOne.h */,
+				364E4F8B1F4285A200C8F7C0 /* TestTableOne.m */,
+				364E4F8C1F4285A200C8F7C0 /* TestTableThree.h */,
+				364E4F8D1F4285A200C8F7C0 /* TestTableThree.m */,
+				364E4F8E1F4285A200C8F7C0 /* TestTableTwo.h */,
+				364E4F8F1F4285A200C8F7C0 /* TestTableTwo.m */,
+				364E4F991F4288BC00C8F7C0 /* TestOnlyViewController.h */,
+				364E4F9A1F4288BC00C8F7C0 /* TestOnlyViewController.m */,
 			);
 			path = TestChild;
 			sourceTree = "<group>";
@@ -121,8 +121,8 @@
 		36ED891F1F5567E5004DC0FC /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				364E4F7D1F3DB32000C8F7C0 /* testPageVC.h */,
-				364E4F7E1F3DB32000C8F7C0 /* testPageVC.m */,
+				364E4F7D1F3DB32000C8F7C0 /* TestPageViewController.h */,
+				364E4F7E1F3DB32000C8F7C0 /* TestPageViewController.m */,
 			);
 			name = Test;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 				TargetAttributes = {
 					364563BF1F3C3B2600C00949 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = NP3QBBD5R7;
+						DevelopmentTeam = PC86T53M43;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,13 +199,13 @@
 			files = (
 				364563C81F3C3B2600C00949 /* AppDelegate.m in Sources */,
 				364563C51F3C3B2600C00949 /* main.m in Sources */,
-				364E4F7F1F3DB32000C8F7C0 /* testPageVC.m in Sources */,
-				364E4F901F4285A200C8F7C0 /* tableOne.m in Sources */,
-				364E4F9B1F4288BC00C8F7C0 /* viewController.m in Sources */,
+				364E4F7F1F3DB32000C8F7C0 /* TestPageViewController.m in Sources */,
+				364E4F901F4285A200C8F7C0 /* TestTableOne.m in Sources */,
+				364E4F9B1F4288BC00C8F7C0 /* TestOnlyViewController.m in Sources */,
 				364563DC1F3C3B4600C00949 /* mainVC.m in Sources */,
-				364E4F911F4285A200C8F7C0 /* tableThree.m in Sources */,
+				364E4F911F4285A200C8F7C0 /* TestTableThree.m in Sources */,
 				364563E01F3C3E7500C00949 /* YMPageViewController.m in Sources */,
-				364E4F921F4285A200C8F7C0 /* tableTwo.m in Sources */,
+				364E4F921F4285A200C8F7C0 /* TestTableTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NP3QBBD5R7;
+				DEVELOPMENT_TEAM = PC86T53M43;
 				INFOPLIST_FILE = YMPageVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -319,7 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NP3QBBD5R7;
+				DEVELOPMENT_TEAM = PC86T53M43;
 				INFOPLIST_FILE = YMPageVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

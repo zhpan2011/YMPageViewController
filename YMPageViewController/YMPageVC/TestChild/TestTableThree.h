@@ -1,5 +1,5 @@
 //
-//  tableTwo.h
+//  TestTableThree.h
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tableTwo : UITableViewController
+@interface TestTableThree : UITableViewController
 
 @end

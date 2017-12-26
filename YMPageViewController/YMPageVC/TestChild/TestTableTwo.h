@@ -1,13 +1,13 @@
 //
-//  testPageVC.h
+//  TestTableTwo.h
 //  YMPageVC
 //
 //  Created by YanMao on 2017/8/11.
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
 
-#import "YMPageViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface testPageVC : YMPageViewController
+@interface TestTableTwo : UITableViewController
 
 @end
