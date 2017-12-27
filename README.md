@@ -14,7 +14,7 @@ Keep DA Dream Alive
                                          UIColor *__autoreleasing *titleSelectBackgroundColor,
                                          BOOL *isNeedBounces) {
         *headerView = tempHeaderView;//头部
-        *childViewControllers = childViewControllersArray;//自控制器
+        *childViewControllers = childViewControllersArray;//子控制器
  }];
    
 ```
