@@ -52,9 +52,7 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    if (self.UITableViewScrollDidScroll) {
-        self.UITableViewScrollDidScroll(scrollView);
-    }
+
 }
 
 /*

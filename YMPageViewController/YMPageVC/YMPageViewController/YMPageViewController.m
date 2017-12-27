@@ -316,6 +316,7 @@
             
         }
         
+        [tempView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
         [self.childViewAry addObject:tempView];
         [self.bottomScrollView addSubview:tempView];
     }
@@ -330,7 +331,14 @@
     tableView.tableHeaderView = tableHeaderView;
 }
 
-- (void)YMScrollViewDidScroll:(UIScrollView *)scrollView {
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([object isKindOfClass:[UIScrollView class]]) {
+        [self observeScrollViewDidScroll:object];
+    }
+}
+
+- (void)observeScrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat y = scrollView.contentOffset.y; //向上0 --> 无限
     
     if (scrollView != _bottomScrollView) { // tableview
@@ -360,11 +368,7 @@
     }
 }
 
-
 #pragma mark - ScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self YMScrollViewDidScroll:scrollView];
-}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {

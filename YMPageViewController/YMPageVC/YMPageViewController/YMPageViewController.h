@@ -45,11 +45,4 @@
                                               UIColor **titleSelectBackgroundColor ,
                                               BOOL    *isNeedBounces))initBlock;
 
-/**
- 将外部的UITableview的滚动传进来(子类调用此方法)
-
- @param scrollView 滚动视图
- */
-- (void)YMScrollViewDidScroll:(UIScrollView *)scrollView;
-
 @end

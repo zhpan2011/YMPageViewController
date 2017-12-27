@@ -47,18 +47,19 @@
     four.title = @"view";
     [childViewControllersArray addObject:four];
     
-    one.UITableViewScrollDidScroll = ^(UIScrollView *scrollView) {
-        [self YMScrollViewDidScroll:scrollView];
-    };
-    
-    two.UITableViewScrollDidScroll = ^(UIScrollView *scrollView) {
-        [self YMScrollViewDidScroll:scrollView];
-    };
-    
-    three.UITableViewScrollDidScroll = ^(UIScrollView *scrollView) {
-        [self YMScrollViewDidScroll:scrollView];
-    };
-    
+    //设置滚动监听
+//    one.UITableViewScrollDidScroll = ^(UIScrollView *scrollView) {
+//        [self YMScrollViewDidScroll:scrollView];
+//    };
+//    
+//    two.UITableViewScrollDidScroll = ^(UIScrollView *scrollView) {
+//        [self YMScrollViewDidScroll:scrollView];
+//    };
+//
+//    three.UITableViewScrollDidScroll = ^(UIScrollView *scrollView) {
+//        [self YMScrollViewDidScroll:scrollView];
+//    };
+//
     //一次性初始化
     [self initWithYMPageViewController:^(UIView *__autoreleasing *headerView,
                                          NSArray *__autoreleasing *childViewControllers,
