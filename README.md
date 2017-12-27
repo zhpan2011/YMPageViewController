@@ -7,14 +7,14 @@ Keep DA Dream Alive
 
 > Makesure your controller inherit YMPageViewController    
 ```
-//一次性初始化
-    [self initWithYMPageViewController:^(UIView *__autoreleasing *headerView,
-                                         NSArray *__autoreleasing *childViewControllers,
-                                         UIColor *__autoreleasing *titleNormalBackgroundColor,
-                                         UIColor *__autoreleasing *titleSelectBackgroundColor,
-                                         BOOL *isNeedBounces) {
-        *headerView = tempHeaderView;
-        *childViewControllers = childViewControllersArray;
-    }];
+//一句代码初始化
+[self initWithYMPageViewController:^(UIView *__autoreleasing *headerView,
+                                    NSArray *__autoreleasing *childViewControllers,
+                                    UIColor *__autoreleasing *titleNormalBackgroundColor,
+                                    UIColor *__autoreleasing *titleSelectBackgroundColor,
+                                       BOOL *isNeedBounces) {
+        *headerView = tempHeaderView; // 设置头部
+        *childViewControllers = childViewControllersArray; //设置子控制器
+ }];
    
 ```
