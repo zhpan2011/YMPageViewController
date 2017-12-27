@@ -9,12 +9,12 @@ Keep DA Dream Alive
 ```
 //一句代码初始化
 [self initWithYMPageViewController:^(UIView *__autoreleasing *headerView,
-                                    NSArray *__autoreleasing *childViewControllers,
-                                    UIColor *__autoreleasing *titleNormalBackgroundColor,
-                                    UIColor *__autoreleasing *titleSelectBackgroundColor,
-                                       BOOL *isNeedBounces) {
-        *headerView = tempHeaderView; // 设置头部
-        *childViewControllers = childViewControllersArray; //设置子控制器
+                                         NSArray<UIViewController *> *__autoreleasing *childViewControllers,
+                                         UIColor *__autoreleasing *titleNormalBackgroundColor,
+                                         UIColor *__autoreleasing *titleSelectBackgroundColor,
+                                         BOOL *isNeedBounces) {
+        *headerView = tempHeaderView;//头部
+        *childViewControllers = childViewControllersArray;//自控制器
  }];
    
 ```
