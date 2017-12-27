@@ -11,12 +11,12 @@
 		364563C81F3C3B2600C00949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 364563C71F3C3B2600C00949 /* AppDelegate.m */; };
 		364563D01F3C3B2600C00949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364563CF1F3C3B2600C00949 /* Assets.xcassets */; };
 		364563DC1F3C3B4600C00949 /* mainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 364563DB1F3C3B4600C00949 /* mainVC.m */; };
-		364563E01F3C3E7500C00949 /* YMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364563DF1F3C3E7500C00949 /* YMPageViewController.m */; };
 		364E4F7F1F3DB32000C8F7C0 /* TestPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F7E1F3DB32000C8F7C0 /* TestPageViewController.m */; };
 		364E4F901F4285A200C8F7C0 /* TestTableOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8B1F4285A200C8F7C0 /* TestTableOne.m */; };
 		364E4F911F4285A200C8F7C0 /* TestTableThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8D1F4285A200C8F7C0 /* TestTableThree.m */; };
 		364E4F921F4285A200C8F7C0 /* TestTableTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F8F1F4285A200C8F7C0 /* TestTableTwo.m */; };
 		364E4F9B1F4288BC00C8F7C0 /* TestOnlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E4F9A1F4288BC00C8F7C0 /* TestOnlyViewController.m */; };
+		367D07BC1FF255000020D3CA /* YMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 367D07BB1FF255000020D3CA /* YMPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,6 @@
 		364563D41F3C3B2600C00949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364563DA1F3C3B4600C00949 /* mainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainVC.h; sourceTree = "<group>"; };
 		364563DB1F3C3B4600C00949 /* mainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainVC.m; sourceTree = "<group>"; };
-		364563DE1F3C3E7500C00949 /* YMPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPageViewController.h; sourceTree = "<group>"; };
-		364563DF1F3C3E7500C00949 /* YMPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPageViewController.m; sourceTree = "<group>"; };
 		364E4F7D1F3DB32000C8F7C0 /* TestPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestPageViewController.h; path = YMPageViewController/TestPageViewController.h; sourceTree = "<group>"; };
 		364E4F7E1F3DB32000C8F7C0 /* TestPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestPageViewController.m; path = YMPageViewController/TestPageViewController.m; sourceTree = "<group>"; };
 		364E4F8A1F4285A200C8F7C0 /* TestTableOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableOne.h; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		364E4F8F1F4285A200C8F7C0 /* TestTableTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableTwo.m; sourceTree = "<group>"; };
 		364E4F991F4288BC00C8F7C0 /* TestOnlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOnlyViewController.h; sourceTree = "<group>"; };
 		364E4F9A1F4288BC00C8F7C0 /* TestOnlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOnlyViewController.m; sourceTree = "<group>"; };
+		367D07BA1FF255000020D3CA /* YMPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPageViewController.h; sourceTree = "<group>"; };
+		367D07BB1FF255000020D3CA /* YMPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		364563DD1F3C3E4E00C00949 /* YMPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				364563DE1F3C3E7500C00949 /* YMPageViewController.h */,
-				364563DF1F3C3E7500C00949 /* YMPageViewController.m */,
+				367D07BA1FF255000020D3CA /* YMPageViewController.h */,
+				367D07BB1FF255000020D3CA /* YMPageViewController.m */,
 			);
 			path = YMPageViewController;
 			sourceTree = "<group>";
@@ -204,8 +204,8 @@
 				364E4F9B1F4288BC00C8F7C0 /* TestOnlyViewController.m in Sources */,
 				364563DC1F3C3B4600C00949 /* mainVC.m in Sources */,
 				364E4F911F4285A200C8F7C0 /* TestTableThree.m in Sources */,
-				364563E01F3C3E7500C00949 /* YMPageViewController.m in Sources */,
 				364E4F921F4285A200C8F7C0 /* TestTableTwo.m in Sources */,
+				367D07BC1FF255000020D3CA /* YMPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

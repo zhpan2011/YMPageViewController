@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TestTableTwo : UITableViewController
-
+@property(nonatomic , copy)void (^UITableViewScrollDidScroll)(UIScrollView *scrollView);
 @end

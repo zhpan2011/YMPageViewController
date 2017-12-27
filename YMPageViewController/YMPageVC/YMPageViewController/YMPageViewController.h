@@ -10,21 +10,14 @@
 /*
  使用方法:1 . 继承YMPageViewController
         2 . 添加childController , 必须设置childController的title , 否则报错 .
- 
-            //示例代码
-            ChildVC *vc = [[ChildVC alloc] init];
-            vc = @"张三";
-            [self addChildViewController:vc];
- 
- 
         3 . 调用初始化设置方法 , 一次性设置所有属性
  
-        作者 : MustangYM
+        作者 : MustangHZ
  */
 
 #import <UIKit/UIKit.h>
 
-@protocol YMpageViewControllerDelegate <NSObject>
+@protocol YMPageViewControllerDelegate <NSObject>
 
 @optional
 
@@ -33,8 +26,6 @@
 
 @interface YMPageViewController : UIViewController
 
-/**头部视图<必须指定frame>*/
-@property(nonatomic, strong)UIView      *YM_HeaderView;
 
 /**是否允许底部容器横向滚动*/ /**这个属性用得很少*/
 @property(nonatomic, assign)BOOL         YM_isBottomScrollEnable;
@@ -42,16 +33,23 @@
 /**
  初始化设置
 
- @param initBlock *titleNorBackgroundColor      标题正常背景颜色
+ @param initBlock *headerView                   头部视图(必须设置头部视图的frame)
+                  *childViewControllers         子控制器的个数
+                  *titleNorBackgroundColor      标题正常背景颜色
                   *titleSelectBackgroundColor   标题被选中时的背景颜色
-                  *headerHeight                 头部视图高度
-                  *titleHeight                  标题栏的高度
-                  *isNeedBounces                下部是否需要弹簧效果
+                  *isNeedBounces                头部是否需要弹簧效果
  */
-- (void)initWithYMPageViewController:(void(^)(UIColor **titleNormalBackgroundColor ,
+- (void)initWithYMPageViewController:(void(^)(UIView  **headerView,
+                                              NSArray **childViewControllers,
+                                              UIColor **titleNormalBackgroundColor ,
                                               UIColor **titleSelectBackgroundColor ,
-                                              CGFloat *headerHeight ,
-                                              CGFloat *titleHeight ,
                                               BOOL    *isNeedBounces))initBlock;
+
+/**
+ 将外部的UITableview的滚动传进来(子类调用此方法)
+
+ @param scrollView 滚动视图
+ */
+- (void)YMScrollViewDidScroll:(UIScrollView *)scrollView;
 
 @end

@@ -53,6 +53,12 @@
 }
 
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.UITableViewScrollDidScroll) {
+        self.UITableViewScrollDidScroll(scrollView);
+    }
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
