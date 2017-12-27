@@ -5,7 +5,7 @@ Keep DA Dream Alive
 
 ＃How to use it
 Makesure your controller inherit YMPageViewController    
-'''
+```
 //一次性初始化
     [self initWithYMPageViewController:^(UIView *__autoreleasing *headerView,
                                          NSArray *__autoreleasing *childViewControllers,
@@ -16,4 +16,4 @@ Makesure your controller inherit YMPageViewController
         *childViewControllers = childViewControllersArray;
     }];
    
-  '''
+```
