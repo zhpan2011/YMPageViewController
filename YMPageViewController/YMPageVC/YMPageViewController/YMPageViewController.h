@@ -12,7 +12,7 @@
         2 . 添加childController , 必须设置childController的title , 否则报错 .
         3 . 调用初始化设置方法 , 一次性设置所有属性
  
-        作者 : MustangHZ
+        作者 : MustangYM
  */
 
 #import <UIKit/UIKit.h>

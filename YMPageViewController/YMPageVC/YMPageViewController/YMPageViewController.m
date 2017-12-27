@@ -5,6 +5,7 @@
 //  Created by YanMao on 2017/8/10.
 //  Copyright © 2017年 YanMao. All rights reserved.
 //
+
 //打印
 #ifdef DEBUG
 #define DeLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
@@ -13,7 +14,7 @@
 #endif
 
 // 屏幕尺寸
-#define HZBounds [UIScreen mainScreen].bounds
+#define YMBounds [UIScreen mainScreen].bounds
 // 屏幕高度
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 // 屏幕宽度
@@ -23,11 +24,11 @@
 // 抛出异常
 #define kException(_ref) [[NSException exceptionWithName:@"YMPageViewController" reason:(_ref) userInfo:nil] raise]
 // 三元色
-#define HZRGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define YMRGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 //16进制颜色
 #define kHexColor(rgbValue , a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
 // 懒加载
-#define HZ_LAZY(object, assignment) (object = object ?: assignment)
+#define YM_LAZY(object, assignment) (object = object ?: assignment)
 
 //头部高度
 #define Head_H 38
@@ -75,7 +76,7 @@
 /**子控制器数组*/
 @property(nonatomic, strong)NSArray                 *childViewcontrollersAry;
 /**头部视图<必须指定frame>*/
-@property(nonatomic, strong)UIView                  *HZ_HeaderView;
+@property(nonatomic, strong)UIView                  *YM_HeaderView;
 /**网络等待view*/
 @property(nonatomic, strong)UIView                  *loadingView;
 
@@ -114,7 +115,7 @@
     }
 }
 
-- (void)HZ_load{
+- (void)YM_load{
     [self.loadingView removeFromSuperview];
     [self setupAeraView];
     [self setupChild];
@@ -131,7 +132,7 @@
     [self setupChildView];
     
     CGFloat H = 0;
-    if (!self.HZ_HeaderView) { // 如果没有传headerview进来,那么头部就没有
+    if (!self.YM_HeaderView) { // 如果没有传headerview进来,那么头部就没有
         H = _SectionTitleView_H;
     }else{
         H = _Header_H;
@@ -141,8 +142,8 @@
     self.sectionTitleView.backgroundColor = self.labelGrayColor;
     self.bottomScrollView.scrollEnabled = self.YM_isBottomScrollEnable;
     
-    self.HZ_HeaderView.frame = CGRectMake(0, 0, SCREEN_WIDTH, H - _SectionTitleView_H);
-    [self.headerView insertSubview:self.HZ_HeaderView belowSubview:_sectionTitleView];
+    self.YM_HeaderView.frame = CGRectMake(0, 0, SCREEN_WIDTH, H - _SectionTitleView_H);
+    [self.headerView insertSubview:self.YM_HeaderView belowSubview:_sectionTitleView];
 }
 
 #pragma mark - 添加三大块父view
@@ -164,7 +165,7 @@
         initBlock(&tempHeader , &tempChildviewControllers , &tempTitleNorBackgroundColor , &tempTitleSelectBackgroundColor , &_isNeedBounces);
         
         if (tempHeader) {
-            self.HZ_HeaderView = tempHeader;
+            self.YM_HeaderView = tempHeader;
             CGFloat height = tempHeader.frame.size.height;
             _Header_H = height;
         }else {
@@ -189,7 +190,7 @@
         
     }
     
-    [self HZ_load];
+    [self YM_load];
 }
 
 #pragma mark - 设置标题宽度
@@ -522,7 +523,7 @@
 /************************** 懒加载 view  *****************************/
 
 - (UIView *)loadingView{
-    return HZ_LAZY(_loadingView, ({
+    return YM_LAZY(_loadingView, ({
         UIView *view = [[UIView alloc] init];
         CGRect frame = view.frame;
         frame.size.width = 100;
@@ -543,7 +544,7 @@
 #pragma mark - 头部视图
 - (UIView *)headerView
 {
-    return HZ_LAZY(_headerView, ({
+    return YM_LAZY(_headerView, ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, Nav_H, SCREEN_WIDTH, _Header_H)];
         view.backgroundColor = [UIColor whiteColor];
         view;
@@ -554,7 +555,7 @@
 #pragma mark - 标题视图
 - (UIView *)sectionTitleView
 {
-    return HZ_LAZY(_sectionTitleView, ({
+    return YM_LAZY(_sectionTitleView, ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, _Header_H - _SectionTitleView_H, SCREEN_WIDTH, _SectionTitleView_H)];
         view.backgroundColor = _labelGrayColor;
         view;
@@ -565,7 +566,7 @@
 #pragma mark - 底部scrollerView
 - (UIScrollView *)bottomScrollView
 {
-    return HZ_LAZY(_bottomScrollView, ({
+    return YM_LAZY(_bottomScrollView, ({
        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, Nav_H, SCREEN_WIDTH, SCREEN_HEIGHT)];
         scrollView.pagingEnabled = YES;
         scrollView.backgroundColor = [UIColor clearColor];
