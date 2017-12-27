@@ -108,6 +108,12 @@
     [self.view addSubview:self.loadingView];
 }
 
+- (void)dealloc{
+    for (UIView *view in self.childViewAry) {
+        [view removeObserver:self forKeyPath:@"contentOffset"];
+    }
+}
+
 - (void)HZ_load{
     [self.loadingView removeFromSuperview];
     [self setupAeraView];
